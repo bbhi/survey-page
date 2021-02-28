@@ -1,0 +1,67 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+<main id="main">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <h1 id="title">User Preferences</h1>
+  <hr>
+  <p id="description">These will be your user preferences for the duration of your employment at FunCorp.</p>
+
+  <form id="survey-form">
+    <div class="formgroup">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Fidget Master" required><br>
+    </div>
+    <div class="formgroup">
+      <label for="email" id="email-label">E-Mail:</label>
+      <input type="email" id="email" name="email" placeholder="fidgetmaster@funcorp.com" required>
+    </div>
+    <div class="formgroup">
+      <label for="number" id="number-label">How many fidget spinners do you require? (1-5,000)</label>
+      <input type="number" id="number" name="fidgetcount" min="1" max="5000" placeholder="2000" required>
+    </div>
+    <div class="formgroup">
+      <label for="dropdown">What color of fidget spinners do you want?</label>
+      <select id="dropdown" name="fidgettype" required>
+        <option disabled selected value>Select a color.</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="purple">Purple</option>
+        <option value="assorted">Assorted</option>
+      </select>
+    </div>
+    <div class="formgroup">
+      <div>What type of fidget spinners would you like?</div>
+      <label>
+        <input type="radio" name="fidgetstyle" value="plastic" checked>Plastic
+      </label>
+      <label>
+        <input type="radio" name="fidgetstyle" value="stainless">Stainless Steel
+      </label>
+      <label>
+        <input type="radio" name="fidgetstyle" value="aluminum">Aluminum
+      </label>
+    </div>
+    <div class="formgroup">
+      <div>To which address(es) on file would you like your spinners mailed? If multiple selected, spinners will be divided evenly between addresses.</div>
+      <label>
+        <input type="checkbox" name="address-selector" value="home">Home
+      </label>
+      <label>
+        <input type="checkbox" name="address-selector" value="van">Van Down by the River
+      </label>
+      <label>
+        <input type="checkbox" name="address-selector" value="apartment">Apartment
+      </label>
+    </div>
+    <div class="formgroup">
+      <label for="comments">Do you have any additional fidget preferences?</label>
+
+      <textarea id="comments" name="comments" rows="4" placeholder="Enter your additional preferences here."></textarea>
+    </div>
+
+    <div class="formgroup">
+      <input type="submit" value="Submit" id="submit">
+    </div>
+  </form>
+</main>

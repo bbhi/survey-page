@@ -1,0 +1,45 @@
+html {
+  background-color: #332a36;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  max-width: 50%;
+  min-width: 100px;
+  margin: 2em auto;
+  padding: 1em 2em;
+  background-color: #fffef2;
+  box-shadow: 0 0 0 13px black;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  text-align: right;
+}
+
+label {
+  display: block;
+}
+
+.formgroup {
+  margin: 0 0 2em 0;
+}
+
+.formgroup label,
+div {
+  margin: 0 0 0.5em 0;
+}
+
+textarea {
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+}
+
+[type="submit"] {
+  color: white;
+  background-color: green;
+  margin: auto;
+  width: 100%;
+  padding: 1em;
+}
